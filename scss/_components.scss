@@ -4,6 +4,10 @@
 .logo {
   height: 4rem;
   margin-left: 2rem;
+
+  @media only screen and (max-width: $bp-small) {
+    margin-left: 0;
+  }
 }
 
 ///////////////////////////////////////////
@@ -274,6 +278,7 @@
     @media only screen and (max-width: $bp-small) {
       font-size: 1.8rem;
       padding: 1.25rem 2rem;
+      padding-right: 0.5rem;
     }
   }
 
@@ -290,6 +295,11 @@
     height: 1.75rem;
     width: 1.75rem;
     fill: var(--color-primary);
+
+    @media only screen and (max-width: $bp-small) {
+      height: 1.2rem;
+      width: 1.2rem;
+    }
   }
 
   &__location {
@@ -316,6 +326,7 @@
 
     @media only screen and (max-width: $bp-small) {
       padding: 0 1.5rem;
+      margin-left: 1rem;
     }
   }
 
@@ -418,6 +429,9 @@
   &__item {
     flex: 0 0 50%;
     margin-bottom: 0.7rem;
+    @media only screen and (max-width: $bp-smallest) {
+      flex: 1 1 100%;
+    }
   }
 
   &__item::before {
