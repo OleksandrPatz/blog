@@ -1698,7 +1698,7 @@ body {
 .form-item input[type=text],
 .form-item input[type=email],
 .form-item input[type=tel],
-button {
+ .form-item button {
   padding: 8px;
   font-size: 16px;
   margin-top: 5px;
