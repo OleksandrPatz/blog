@@ -245,7 +245,7 @@ body {
 .search__input:focus + .search__button:focus {
 
  border: none;
-    background-color: var(--color-grey-light-2);
+    background-color: var(--color-grey-light-3);
 }
 .search__button {
   border: none;
@@ -256,7 +256,7 @@ body {
 }
 .search__button:active {
   border: none;
-    background-color: var(--color-grey-light-2);
+    background-color: var(--color-grey-light-3);
   
 }
 .search__icon {
