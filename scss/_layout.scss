@@ -4,7 +4,11 @@
   margin: 8rem auto;
   background-color: var(--color-grey-light-1);
   box-shadow: var(--shadow-dark);
+  overflow: hidden;
 
+  @media only screen and (min-width: $bp-huge) {
+    max-width: 160rem;
+  }
   @media only screen and (max-width: $bp-largest) {
     margin: 0;
     max-width: 100%;
@@ -42,6 +46,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  z-index: 2;
 }
 
 .adventures {
@@ -71,9 +76,8 @@
 .description {
   font-size: 1.4rem;
   background-color: #fff;
-  box-shadow: var(--shadow-light);
+
   flex: 0 0 60%;
-  padding: 3rem;
 
   @media only screen and (max-width: $bp-medium) {
     padding: 2rem;

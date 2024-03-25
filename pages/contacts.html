@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script defer src="../script.js"></script>
+
+    <title>Adventure page &mdash; FPV</title>
+  </head>
+  <body id="home-page">
+    <div class="container">
+      <!-- HEADER -->
+      <header class="header">
+        <img src="../img/logo.png " alt="logo" class="logo" />
+        <!-- INPUT -->
+        <form action="#" class="search">
+          <input
+            type="text"
+            class="search__input"
+            placeholder="Search hotels"
+          />
+
+          <button class="search__button">
+            <svg class="search__icon">
+              <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+            </svg>
+          </button>
+        </form>
+
+        <!-- NAVIGATION -->
+        <nav class="user-nav">
+          <div class="user-nav__icon-box">
+            <svg class="user-nav__icon">
+              <use xlink:href="../img/sprite.svg#icon-bookmark"></use>
+            </svg>
+            <span class="user-nav__notification">4</span>
+          </div>
+
+          <div class="user-nav__icon-box">
+            <svg class="user-nav__icon">
+              <use xlink:href="../img/sprite.svg#icon-chat"></use>
+            </svg>
+            <span class="user-nav__notification">12</span>
+          </div>
+          <div class="user-nav__user">
+            <img
+              src="../img/user.jpg"
+              alt="user-1"
+              class="user-nav__user-photo"
+            />
+            <span class="user-nav-user-name">Oleksandr</span>
+          </div>
+        </nav>
+      </header>
+
+      <!-- SIDE BAR -->
+      <div class="content">
+        <nav class="sidebar">
+          <ul class="side-nav">
+            <li class="side-nav__item">
+              <a href="/index.html" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use xlink:href="../img/sprite.svg#icon-home"></use>
+                </svg>
+                <span>Home</span>
+              </a>
+            </li>
+            <li class="side-nav__item">
+              <a href="/pages/flight.html" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use
+                    xlink:href="../img/sprite.svg#icon-aircraft-take-off"
+                  ></use>
+                </svg>
+                <span>Tours</span>
+              </a>
+            </li>
+            <li class="side-nav__item side-nav__item-active">
+              <a href="/pages/contacts.html" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use xlink:href="../img/sprite.svg#icon-key"></use>
+                </svg>
+                <span>Contacts</span>
+              </a>
+            </li>
+          </ul>
+          <div class="legal">
+            &copy; 2024 by Oleksandr FPV. All rights reserved.
+          </div>
+        </nav>
+
+        <!-- Section Contac -->
+        <section class="contacts detail">
+          <div class="image-container"></div>
+          <div class="contacts__info">
+            <h2 class="heading__secondary u-margin-bottom-middle">
+              Any question?
+            </h2>
+
+            <p class="paragraph contact__info">
+              Please contact us if you have any offer requests or enquiries
+              regarding your current/future bookings. We are available by phone,
+              email and via social media. We typically respond within 24-48
+              hours.
+            </p>
+            <p class="paragraph contact__info">
+              Opening hours: <br />
+              <span> Mon - Sat 10:00 AM - 6:00 PM </span> <br />
+              <span> Sun - 10:00 AM - 6:00 PM (only by phone) </span>
+            </p>
+
+            <ul class="list contact__content">
+              <li class="list__icon">
+                <a class="contact__link" href="tel:+380123456789"
+                  >Tel: +48 604 704 685</a
+                >
+              </li>
+              <li class="list__icon">
+                <a class="contact__link" href="mailto:example@example.com"
+                  >Email: OleksandrFPV@example.com</a
+                >
+              </li>
+              <li class="list__icon">
+                <p class="paragraph u-margin-top-mini">
+                  <span>ul. Baśniowa 3,</span><br />
+                  <span>office 116 02-349 Warsaw </span><br /><span
+                    >Poland</span
+                  >
+                </p>
+              </li>
+            </ul>
+          </div>
+          <form action="post" class="contacts__form">
+            <div class="form-item">
+              <h2 class="heading__secondary">Contact Us</h2>
+            </div>
+            <div class="form-item">
+              <p class="paragraph">
+                Please fill out the contact form below. We will get in touch
+                with you shortly.
+              </p>
+            </div>
+            <div class="form-item">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-item">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-item">
+              <label for="phone">Phone Number</label>
+
+              <input type="tel" id="phone" name="phone" required />
+            </div>
+            <div class="form-item checkbox">
+              <input type="checkbox" id="human" name="human" required />
+              <label for="human">I am a human</label>
+            </div>
+            <div class="form-item">
+              <button class="btn u-margin-top-sm" type="submit">Submit</button>
+            </div>
+          </form>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>

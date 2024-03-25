@@ -8,11 +8,12 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script defer src="../script.js"></script>
 
     <title>Adventure page &mdash; FPV</title>
   </head>
-  <body>
+  <body id="home-page">
     <div class="container">
       <!-- HEADER -->
       <header class="header">
@@ -59,35 +60,27 @@
         <nav class="sidebar">
           <ul class="side-nav">
             <li class="side-nav__item side-nav__item-active">
-              <a href="#" class="side-nav__link">
+              <a href="/index.html" class="side-nav__link">
                 <svg class="side-nav__icon">
                   <use xlink:href="img/sprite.svg#icon-home"></use>
                 </svg>
-                <span>Resort</span>
+                <span>Home</span>
               </a>
             </li>
             <li class="side-nav__item">
-              <a href="#" class="side-nav__link">
+              <a href="/pages/flight.html" class="side-nav__link">
                 <svg class="side-nav__icon">
                   <use xlink:href="img/sprite.svg#icon-aircraft-take-off"></use>
                 </svg>
-                <span>Flight</span>
+                <span>Tours</span>
               </a>
             </li>
             <li class="side-nav__item">
-              <a href="#" class="side-nav__link">
+              <a href="/pages/contacts.html" class="side-nav__link">
                 <svg class="side-nav__icon">
-                  <use xlink:href="img/sprite.svg#icon-key"></use>
+                  <use xlink:href="../img/sprite.svg#icon-key"></use>
                 </svg>
-                <span>Hytte</span>
-              </a>
-            </li>
-            <li class="side-nav__item">
-              <a href="#" class="side-nav__link">
-                <svg class="side-nav__icon">
-                  <use xlink:href="img/sprite.svg#icon-map"></use>
-                </svg>
-                <span>spots</span>
+                <span>Contacts</span>
               </a>
             </li>
           </ul>
@@ -161,7 +154,7 @@
           </div>
 
           <div class="detail">
-            <div class="description">
+            <div class="description shadow-light u-padding-sm">
               <p class="paragraph">
                 Welcome to Ålesund — a picturesque town nestled between Norway’s
                 magnificent fjords. Art Nouveau facades adorn cobbled streets,
@@ -261,12 +254,63 @@
             <h2 class="cta__book-now">
               Good news! We have 5 places left for your selected dates!
             </h2>
-            <button class="btn">
+            <button class="btn btn-book">
               <span class="btn__visible">Book now</span>
               <sapan class="btn__invisible">Only 5 places left</sapan>
             </button>
           </div>
         </main>
+      </div>
+    </div>
+
+    <!-- PopUp -->
+
+    <div class="popup" id="popup">
+      <div class="popup__content">
+        <div class="popup__close">&times;</div>
+        <div class="popup__img-box">
+          <img
+            class="popup__img"
+            src="/img/guide-1.jpg"
+            alt="guide man"
+            width="100%"
+          />
+        </div>
+        <div class="popup__content-box">
+          <div class="popup__text-box">
+            <h2 class="popup__heading">Get your discount Now!</h2>
+
+            <p class="popup__text">
+              Fill in information and our manager will call you back at the
+              agreement time.
+            </p>
+          </div>
+          <form class="popup__input placeholderText">
+            <div class="popup__input-box">
+              <label class="popup__label" for="name">Name</label>
+              <input
+                type="text"
+                name="Name"
+                id="name"
+                placeholder="Eva Smith"
+                required
+              />
+            </div>
+            <div class="popup__input-box">
+              <label class="popup__label" for="phone">Phone</label>
+              <input
+                type="tel"
+                id="phone"
+                pattern="\d*"
+                placeholder="phone number"
+                required
+              />
+            </div>
+            <div class="popup__input-box">
+              <button class="btn btn-popup u-margin-top-sm">Got it</button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   </body>

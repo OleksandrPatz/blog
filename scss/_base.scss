@@ -33,7 +33,7 @@ Grey dark 3: #999
 
   //shadow
   --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
-  --shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.06);
+  --shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.1);
 
   //border
   --line: 1px solid var(--color-grey-light-2);
@@ -41,11 +41,53 @@ Grey dark 3: #999
 
 // Media breakpoints
 
+$bp-huge: 82.5em; // 1200px
 $bp-largest: 75em; // 1200px
 $bp-large: 68.75em; // 1100px
 $bp-medium: 56.75em; // 900px
 $bp-small: 38.5em; // 620px
 $bp-smallest: 31.25em; // 500px
+
+// Utilites
+.u-margin-top-sm {
+  margin-top: 3.6rem;
+}
+.u-margin-top-mini {
+  margin-top: 1.6rem;
+}
+
+.u-margin-bottom-sm {
+  margin-bottom: 1.6rem;
+}
+.u-margin-bottom-middle {
+  margin-bottom: 2.4rem;
+}
+.u-padding-sm {
+  padding: 3rem;
+}
+
+// Typography
+.heading__secondary {
+  font-size: 3.6rem;
+
+  color: var(--color-primary-dark);
+}
+
+.contact__link,
+.contact__link:visited,
+.contact__link:active {
+  text-decoration: none;
+  color: var(--color-primary-dark);
+}
+
+.flex__column {
+  flex-direction: column;
+}
+
+//Shadow
+.shadow-light {
+  box-shadow: var(--shadow-light);
+}
 
 * {
   margin: 0;

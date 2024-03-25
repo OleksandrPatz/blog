@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script defer src="../script.js"></script>
+
+    <title>Adventure page &mdash; FPV</title>
+  </head>
+  <body id="home-page">
+    <div class="container">
+      <!-- HEADER -->
+      <header class="header">
+        <img src="/img/logo.png " alt="logo" class="logo" />
+        <!-- INPUT -->
+        <form action="#" class="search">
+          <input
+            type="text"
+            class="search__input"
+            placeholder="Search hotels"
+          />
+
+          <button class="search__button">
+            <svg class="search__icon">
+              <use
+                xlink:href="../../../img/sprite.svg#icon-magnifying-glass"
+              ></use>
+            </svg>
+          </button>
+        </form>
+
+        <!-- NAVIGATION -->
+        <nav class="user-nav">
+          <div class="user-nav__icon-box">
+            <svg class="user-nav__icon">
+              <use xlink:href="/img/sprite.svg#icon-bookmark"></use>
+            </svg>
+            <span class="user-nav__notification">4</span>
+          </div>
+
+          <div class="user-nav__icon-box">
+            <svg class="user-nav__icon">
+              <use xlink:href="/img/sprite.svg#icon-chat"></use>
+            </svg>
+            <span class="user-nav__notification">12</span>
+          </div>
+          <div class="user-nav__user">
+            <img
+              src="/img/user.jpg"
+              alt="user-1"
+              class="user-nav__user-photo"
+            />
+            <span class="user-nav-user-name">Oleksandr</span>
+          </div>
+        </nav>
+      </header>
+
+      <!-- SIDE BAR -->
+      <div class="content">
+        <nav class="sidebar">
+          <ul class="side-nav">
+            <li class="side-nav__item">
+              <a href="/index.html" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use xlink:href="../../img/sprite.svg#icon-home"></use>
+                </svg>
+                <span>Home</span>
+              </a>
+            </li>
+            <li class="side-nav__item side-nav__item-active">
+              <a href="/pages/flight.html" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use
+                    xlink:href="../../img/sprite.svg#icon-aircraft-take-off"
+                  ></use>
+                </svg>
+                <span>Tours</span>
+              </a>
+            </li>
+            <li class="side-nav__item">
+              <a href="/pages/contacts.html" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use xlink:href="../../img/sprite.svg#icon-key"></use>
+                </svg>
+                <span>Contacts</span>
+              </a>
+            </li>
+          </ul>
+          <div class="legal">
+            &copy; 2024 by Oleksandr FPV. All rights reserved.
+          </div>
+        </nav>
+
+        <!-- MAIN PART -->
+
+        <section class="tour">
+          <div class="tour__option tour__option-img-box tour__option-img-box-1">
+            <img src="../img/slide-image-6.jpg" alt="fjord" />
+          </div>
+          <div class="tour__option tour__option-content tour__option-content-1">
+            <h2 class="heading__secondary u-margin-bottom-sm">
+              Explore the Waterfalls
+            </h2>
+            <div class="description u-margin-bottom-sm">
+              <p class="paragraph">
+                Waterfalls are among nature’s most breathtaking spectacles,
+                offering stunning views and the serene sound of cascading water.
+                They provide a sense of peace and tranquility that is hard to
+                find.
+              </p>
+
+              <p class="paragraph">
+                The sheer beauty of waterfalls provides a visual treat that can
+                lift spirits and inspire.
+              </p>
+              <ul class="list">
+                <li class="list__item">Art Nouveau Ålesund</li>
+                <li class="list__item">Aksla Viewpoint</li>
+                <li class="list__item">Ålesund Harbor</li>
+                <li class="list__item">Atlanterhavsparken</li>
+                <li class="list__item">Jugendstilsenteret</li>
+                <li class="list__item">Kayaking</li>
+                <li class="list__item">Hiking</li>
+                <li class="list__item">Local Cuisine</li>
+                <li class="list__item">Fjord Cruises</li>
+                <li class="list__item">Ålesund Museum</li>
+              </ul>
+            </div>
+            <button class="btn btn-book-tour">Book now</button>
+          </div>
+          <div class="tour__option tour__option-content tour__option-content-2">
+            <h2 class="heading__secondary u-margin-bottom-sm">
+              The Alesund city
+            </h2>
+            <div class="description u-margin-bottom-sm">
+              <p class="paragraph">
+                Ålesund is a remarkable destination in Norway. The town is set
+                on a series of islands creating beautiful vistas and
+                opportunities for outdoor activities like hiking and kayaking.
+              </p>
+              <p class="paragraph">
+                After a devastating fire in 1904, Ålesund was rebuilt in the Art
+                Nouveau style, making its streetscapes a visual delight1.
+              </p>
+
+              <p class="paragraph">
+                Hiking up to viewpoints like Mount Aksla provides panoramic
+                views of the Ålesund archipelago.
+              </p>
+              <ul class="list">
+                <li class="list__item">Månafossen</li>
+                <li class="list__item">Vettisfossen</li>
+                <li class="list__item">Hengjanefossen</li>
+                <li class="list__item">Tvindefossen</li>
+                <li class="list__item">Steinsdalsfossen</li>
+                <li class="list__item">Låtefossen</li>
+                <li class="list__item">Rjukanfossen</li>
+                <li class="list__item">Svandalsfossen</li>
+              </ul>
+            </div>
+            <button class="btn btn-book-tour">Book now</button>
+          </div>
+          <div class="tour__option tour__option-img-box tour__option-img-box-2">
+            <img src="../img/photo-4.jpg" alt="fjord" />
+          </div>
+          <div class="tour__option tour__option-img-box tour__option-img-box-3">
+            <img src="../img/fjord-2.jpg" alt="fjord" />
+          </div>
+          <div class="tour__option tour__option-content tour__option-content-3">
+            <h2 class="heading__secondary u-margin-bottom-sm">
+              Around the Fjords
+            </h2>
+            <div class="description u-margin-bottom-sm">
+              <p class="paragraph">
+                A journey where the world’s most enchanting landscapes unfold
+                before your eyes. A trip around the Norwegian fjords is not just
+                a holiday. it’s an expedition into the heart of nature’s
+                masterpiece.
+              </p>
+              <p class="paragraph">
+                Sail through waters that mirror the skies, flanked by cliffs
+                that have stood the test of time.
+              </p>
+
+              <p class="paragraph">
+                Away from the hustle of everyday life, the fjords provide a
+                tranquil escape where the only agenda is to relax and
+                rejuvenate.
+              </p>
+              <ul class="list">
+                <li class="list__item">Geirangerfjord</li>
+                <li class="list__item">Nærøyfjord</li>
+                <li class="list__item">Aurlandsfjord</li>
+                <li class="list__item">Lysefjord</li>
+                <li class="list__item">Trollfjord</li>
+                <li class="list__item">Sognefjord</li>
+                <li class="list__item">Hardangerfjord</li>
+                <li class="list__item">Hjørundfjord</li>
+              </ul>
+            </div>
+            <button class="btn btn-book-tour">Book now</button>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- PopUp -->
+
+    <div class="popup" id="popup">
+      <div class="popup__content">
+        <div class="popup__close">&times;</div>
+        <div class="popup__img-box">
+          <img
+            class="popup__img"
+            src="/img/guide-1.jpg"
+            alt="guide man"
+            width="100%"
+          />
+        </div>
+        <div class="popup__content-box">
+          <div class="popup__text-box">
+            <h2 class="popup__heading">Get your discount Now!</h2>
+
+            <p class="popup__text">
+              Fill in information and our manager will call you back at the
+              agreement time.
+            </p>
+          </div>
+          <form class="popup__input placeholderText">
+            <div class="popup__input-box">
+              <label class="popup__label" for="name">Name</label>
+              <input
+                type="text"
+                name="Name"
+                id="name"
+                placeholder="Eva Smith"
+                required
+              />
+            </div>
+            <div class="popup__input-box">
+              <label class="popup__label" for="phone">Phone</label>
+              <input
+                type="tel"
+                id="phone"
+                pattern="\d*"
+                placeholder="phone number"
+                required
+              />
+            </div>
+            <div class="popup__input-box">
+              <button class="btn btn-book-tour">Book now</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
