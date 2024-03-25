@@ -243,18 +243,19 @@ body {
   color: var(--color-grey);
 }
 .search__input:focus + .search__button:focus {
- 
+  background-color:#eaeaea;
  
 }
 .search__button {
   border: none;
-   background-color:#eaeaea;
+   background-color:#eaeaea !important;
    transform: translateX(-2rem);
 }
 .search__button:focus {
   outline: none;
 }
 .search__button:active {
+   background-color:#eaeaea;
   transform: translateY(2px);
 }
 .search__icon {
