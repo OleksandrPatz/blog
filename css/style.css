@@ -249,7 +249,7 @@ body {
 }
 .search__button {
   border: none;
- 
+    background-color: var(--color-grey-light-3)!important;
 }
 .search__button:focus {
   outline: none;
