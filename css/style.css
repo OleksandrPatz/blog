@@ -1695,9 +1695,9 @@ body {
   margin-left: 10px;
 }
 
-input[type=text],
-input[type=email],
-input[type=tel],
+.form-item input[type=text],
+.form-item input[type=email],
+.form-item input[type=tel],
 button {
   padding: 8px;
   font-size: 16px;
