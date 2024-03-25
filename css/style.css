@@ -243,20 +243,21 @@ body {
   color: var(--color-grey);
 }
 .search__input:focus + .search__button:focus {
-  background-color:#eaeaea;
- 
+
+ border: none;
+    background-color: var(--color-grey-light-2);
 }
 .search__button {
   border: none;
-   background-color:#eaeaea !important;
-   transform: translateX(-2rem);
+ 
 }
 .search__button:focus {
   outline: none;
 }
 .search__button:active {
-   background-color:#eaeaea;
-  transform: translateY(2px);
+  border: none;
+    background-color: var(--color-grey-light-2);
+  
 }
 .search__icon {
   height: 2rem;
