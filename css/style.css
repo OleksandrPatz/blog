@@ -243,7 +243,8 @@ body {
   color: var(--color-grey);
 }
 .search__input:focus + .search__button:focus {
-  background-color: var(--color-grey-light-3);
+  background-color:#eaeaea;
+  transform: translateX(-2rem);
 }
 .search__button {
   border: none;
