@@ -1639,6 +1639,7 @@ body {
 .contacts {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  overflow: hidden;
 }
 @media only screen and (max-width: 38.5em) {
   .contacts {
