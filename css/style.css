@@ -807,12 +807,15 @@ body {
   border: none;
   border-radius: 3px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  color: var(--color-grey-dark-1);
+}
+.popup__input::placeholder {
   color: var(--color-grey-dark-3);
 }
-.popup__input input:focus {
+.popup__input::placeholder:focus {
   outline: none;
 }
-.popup__input input::placeholder {
+.popup__input::placeholder::placeholder {
   font-weight: 100;
   color: var(--color-grey);
 }
@@ -956,7 +959,7 @@ body {
   margin-left: 10px;
 }
 
-input[type=text],
+.contacts__info input[type=text],
 input[type=email],
 input[type=tel],
 button {

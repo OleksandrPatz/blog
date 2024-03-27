@@ -15,6 +15,11 @@ document.addEventListener("DOMContentLoaded", () => {
   function hidePopup() {
     popup.classList.remove("popup--active");
     setTimeout(() => (popup.style.display = "none"), 500); // Wait for the animation to finish
+
+    const inputs = popup.querySelectorAll("input");
+    inputs.forEach((input) => {
+      input.value = ""; // Встановлюємо значення кожного поля в пустий рядок
+    });
   }
 
   // Event listeners for opening the popup
