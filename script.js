@@ -5,73 +5,49 @@ document.addEventListener("DOMContentLoaded", () => {
   const bookTour = document.querySelectorAll(".btn-book-tour");
   const navItems = document.querySelectorAll(".side-nav__item");
 
+  // Function to show the popup
   function showPopup() {
-    popup.style.display = "flex"; // Make sure the popup is displayed before starting the animation
-    setTimeout(() => {
-      popup.classList.add("popup--active");
-    }, 10); // A small delay to ensure the display: flex takes effect
+    popup.style.display = "flex";
+    setTimeout(() => popup.classList.add("popup--active"), 10);
   }
 
+  // Function to hide the popup
   function hidePopup() {
-    const content = popup.querySelector(".popup__content");
-    content.style.transform = "scale(0.1)";
-    content.style.opacity = "1";
-    setTimeout(() => {
-      popup.classList.remove("popup--active");
-      setTimeout(() => {
-        content.style.transition = "none";
-        // Trigger reflow
-        content.offsetHeight;
-        content.style.transition = "";
-        content.style.transform = "";
-        content.style.opacity = "";
-        popup.style.display = "none"; // Hide the popup after the animations
-      }, 500); // This delay should match the duration of the scale down animation
-    }, 500); // Match the duration of the content scale animation
+    popup.classList.remove("popup--active");
+    setTimeout(() => (popup.style.display = "none"), 500); // Wait for the animation to finish
   }
-  if (bookNow)
+
+  // Event listeners for opening the popup
+  if (bookNow) {
     bookNow.addEventListener("click", (e) => {
-      e.preventDefault(); // Prevents any form submission or navigation
+      e.preventDefault();
       showPopup();
     });
-  if (bookTour)
-    bookTour.forEach((bookTour) => {
-      bookTour.addEventListener("click", (e) => {
-        e.preventDefault(); // Prevents any form submission or navigation
-        showPopup();
-      });
-    });
+  }
 
-  closePopupButton.addEventListener("click", hidePopup);
-
-  // Phone number validation
-  document.addEventListener("DOMContentLoaded", () => {
-    const phoneInput = document.getElementById("phone");
-
-    phoneInput.addEventListener("input", () => {
-      let numbers = phoneInput.value.replace(/\D/g, "");
-      phoneInput.value = numbers;
+  bookTour.forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+      e.preventDefault();
+      showPopup();
     });
   });
 
-  // Active links
-  document.addEventListener("click", () => {
-    // Get all side-nav__item elements
+  // Event listener for closing the popup
+  closePopupButton.addEventListener("click", hidePopup);
 
-    // Add click event listener to each item
-    navItems.forEach((item) => {
-      item.addEventListener("click", (event) => {
-        // Prevent the default link behavior
-        event.preventDefault();
+  // Event listeners for phone number validation
+  const phoneInput = document.getElementById("phone");
+  if (phoneInput) {
+    phoneInput.addEventListener("input", () => {
+      phoneInput.value = phoneInput.value.replace(/\D/g, "");
+    });
+  }
 
-        // Remove side-nav__item-active class from all items
-        navItems.forEach((i) => {
-          i.classList.remove("side-nav__item-active");
-        });
-
-        // Add side-nav__item-active class to the clicked item
-        item.classList.add("side-nav__item-active");
-      });
+  // Handling navigation item clicks
+  navItems.forEach((item) => {
+    item.addEventListener("click", () => {
+      navItems.forEach((i) => i.classList.remove("side-nav__item-active"));
+      item.classList.add("side-nav__item-active");
     });
   });
 });
