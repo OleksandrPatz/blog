@@ -751,7 +751,7 @@ body {
   border-radius: 5px;
   background-image: linear-gradient(225deg, var(--color-primary-light), var(--color-primary-dark));
   display: grid;
-  grid-template-columns: 2fr 3fr;
+  grid-template-columns: 2.3fr 3fr;
   justify-content: center;
   align-content: center;
   opacity: 0.1;
