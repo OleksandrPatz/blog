@@ -226,9 +226,9 @@ body {
   font-family: inherit;
   font-size: inherit;
   color: inherit;
-  background-color: var(--color-grey-light-3);
+  background-color: var(--color-grey-light-2);
   border: none;
-  margin-right: -3.25rem;
+  margin-right: -5.5rem;
   padding: 0.7rem 2rem;
   border-radius: 15rem;
   width: 90%;
@@ -246,8 +246,10 @@ body {
   background-color: var(--color-grey-light-3);
 }
 .search__button {
+  padding: 0;
+  border-radius: 50%;
   border: none;
-  background-color: var(--color-grey-light-2);
+  background-color: var(--color-grey-light-3);
 }
 .search__button:focus {
   outline: none;
@@ -904,6 +906,10 @@ body {
   }
 }
 
+.detail {
+  overflow: hidden;
+}
+
 .contacts {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -959,7 +965,8 @@ body {
   margin-left: 10px;
 }
 
-.contacts__info input[type=text],
+.contacts__info,
+input[type=text],
 input[type=email],
 input[type=tel],
 button {

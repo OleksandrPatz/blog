@@ -13,6 +13,9 @@
     margin: 0;
   }
 }
+.detail {
+  overflow: hidden;
+}
 
 .contacts {
   display: grid;
@@ -67,7 +70,8 @@
   margin-left: 10px;
 }
 
-.contacts__info input[type="text"],
+.contacts__info,
+input[type="text"],
 input[type="email"],
 input[type="tel"],
 button {
